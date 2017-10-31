@@ -28,7 +28,7 @@ public class TradeOrder {
 		
 		
 		
-		return Trader + "\n" + symbol + "\n" + buy +  ;
+		return trader + "\n" + symbol + "\n" + buyOrSell + "\n"  ;
 		
 	}
 

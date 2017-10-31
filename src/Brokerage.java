@@ -10,7 +10,12 @@ public class Brokerage implements Login{
 	
 	public Brokerage () {
 		registeredTraders = new TreeMap<String, Trader>();
-		loggedInTrader = new TreeSet<Trader>();
+		loggedInTraders = new TreeSet<Trader>();
+	}
+
+
+	public Brokerage(StockExchange exchange) {
+		// TODO Auto-generated constructor stub
 	}
 
 
@@ -36,6 +41,20 @@ public class Brokerage implements Login{
 		if (trader == null) 
 			return -1;
 		String storedPassword = trader.getPassword();
-		if (!storedPassword)
+		if (storedPassword != password)
+			return -2;
+		
 		return 0;
+		
 	}
+	
+	public void getQuote(String symbol, Trader trader) {
+		
+	}
+	
+	public void placeOrder (TradeOrder order) {
+		
+		
+	}
+	
+}

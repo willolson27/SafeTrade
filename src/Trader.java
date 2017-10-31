@@ -16,7 +16,7 @@ public class Trader {
 	
 	public String toString() {
 		
-		return brokerage + 
+		return brokerage + username;
 		
 	}
 
