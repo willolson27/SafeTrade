@@ -9,6 +9,7 @@ public class Stock implements Comparable<Stock> {
    
    private PriorityQueue<TradeOrder> buyOrders;
    private PriorityQueue<TradeOrder> sellOrders;
+   private int dayVolume;
    
    private static DecimalFormat money = new DecimalFormat("$#,##0.00");
    
@@ -19,6 +20,8 @@ public class Stock implements Comparable<Stock> {
       lowPrice  = p;
       lastPrice = p;
       highPrice = p;
+      dayVolume = 0;
+      //Volume
       
      }
      
@@ -36,6 +39,14 @@ public class Stock implements Comparable<Stock> {
 
 	public void placeOrder(TradeOrder order) {
 		// TODO Auto-generated method stub
+		
+	}
+	
+	public String getQuote() {
+		//TODO this thihny
+		
+		return null;
+		
 		
 	}
      

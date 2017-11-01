@@ -1,6 +1,6 @@
 
 public class LoginWindow {
-
+	
 	public LoginWindow(String string, Brokerage safeTrade) {
 		// TODO Auto-generated constructor stub
 	}
