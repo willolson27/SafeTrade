@@ -4,7 +4,8 @@ public class SafeTradeTest {
    
       Stock stock = new Stock("HELP", "Tutoring Inc", 12345.670);
       
-      System.out.println(stock);
+      String a = stock.getQuote();
+      System.out.println(a);
       
       
       }

@@ -25,8 +25,9 @@ public class StockExchange {
 	
 	void placeOrder (TradeOrder order) {
 		String sym = order.getSymbol();
+		Stock stock = stocks.get(sym);
 		if (stocks.containsKey(sym))
-			stocks.get(sym).placeOrder(order);
+			stock.placeOrder(order);
 	}
 	
 }

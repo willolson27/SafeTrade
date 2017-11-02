@@ -20,8 +20,48 @@ public class Trader {
 		
 	}
 
-	public String getPassword() {
-		// TODO Auto-generated method stub
-		return null;
+	public int compareTo(Trader other) {
+		//TODO
+		return -1;
+		
 	}
+	
+	public boolean equals (Trader other) {
+		if (this.username.toLowerCase().equals(other.username.toLowerCase()))
+			return true;
+		return false;
+	}
+	
+	public String getName() {
+		
+		return username;
+		
+	}
+	
+	public String getPassword() {
+		
+		return password;
+		
+	}
+	
+	public void placeOrder (TradeOrder order) {
+		
+		brokerage.placeOrder(order);
+		
+	}
+	
+	
+	public void quit () {
+		
+		brokerage.logout(this);
+	}
+
+	public void getQuote(String symbol) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
 }

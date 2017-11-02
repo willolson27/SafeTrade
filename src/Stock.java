@@ -43,9 +43,11 @@ public class Stock implements Comparable<Stock> {
 	}
 	
 	public String getQuote() {
-		//TODO this thihny
+		//TODO this thingy
+		return (name + "\t" + symbol + "\n" + 
+				"Price:" + lastPrice + "\t" + "hi:" + highPrice + "\t" + "lo:" + lowPrice + "vol: " + dayVolume + "\n"
+				);
 		
-		return null;
 		
 		
 	}

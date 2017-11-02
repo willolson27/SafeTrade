@@ -8,7 +8,7 @@ public class TradeOrder {
 	private boolean buy;
 	private boolean market;
 	
-	TradeOrder(Trader t, String s, boolean buy, int shares, boolean market, double price, int numShares) {
+	TradeOrder(Trader t, String s, boolean buy,  boolean market, int shares, double price) {
 		
 		trader = t;
 		symbol = s;
@@ -25,10 +25,13 @@ public class TradeOrder {
 			buyOrSell = "buy";
 		else
 			buyOrSell = "sell";
+		if (market)
+			marketOrLimit = "market";
+		else
+			marketOrLimit = "limit";
 		
 		
-		
-		return trader + "\n" + symbol + "\n" + buyOrSell + "\n"  ;
+		return trader + "\n" + symbol + "\n" + buyOrSell + "\n" + marketOrLimit ;
 		
 	}
 
@@ -78,6 +81,10 @@ public class TradeOrder {
 
 	public void setMarket(boolean market) {
 		this.market = market;
+	}
+	
+	public void subtractShares (int shares) {
+		numShares -= shares;
 	}
 	
 	
