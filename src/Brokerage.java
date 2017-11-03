@@ -31,7 +31,7 @@ public class Brokerage implements Login{
 		if (registeredTraders.containsKey(name)) 
 			return -3;
 		registeredTraders.put(name, new Trader(this, name, password));
-		return 0;
+		return -0;
 	}
 
 

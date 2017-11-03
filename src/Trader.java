@@ -21,8 +21,8 @@ public class Trader {
 	}
 
 	public int compareTo(Trader other) {
-		//TODO
-		return -1;
+
+		return this.username.compareTo(other.username);
 		
 	}
 	
